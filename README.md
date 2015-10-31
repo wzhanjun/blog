@@ -1,0 +1,2 @@
+# blog
+my person notes
