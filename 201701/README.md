@@ -7,3 +7,5 @@
 - [nginx408错误](05.md)
 - [scp文件同步命令](06.md)
 - [linux添加用户命令](07.md)
+- [rpm安装mysql](08.md)
+- [iptables端口配置](09.md)
