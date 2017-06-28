@@ -18,3 +18,12 @@
 - [内置sftp设置](201702/01.md)
 - [编译一个动态库so](201702/编译so文件.md)
 - [windows自定义doskey](201702/windows自定义doskey.md)
+
+### 2017-05
+
+- [python多环境](pyenv.md)
+- [python的问题归纳](python的问题归纳)
+
+### 2017-06
+
+- [mysql编译安装](mysql_install.md)
