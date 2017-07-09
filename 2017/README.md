@@ -27,3 +27,9 @@
 ### 2017-06
 
 - [mysql编译安装](mysql_install.md)
+
+
+### 2017-07
+
+- [php编译安装](php_install.md)
+- [php扩展编译](php_redis_install.md)
