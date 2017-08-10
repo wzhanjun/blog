@@ -78,6 +78,10 @@ chmod 755 /etc/init.d/mysqld
 
 chkconfig mysqld on
 
+或  
+
+sudo update-rc.d mysql defaults
+
 ```
 
 
@@ -87,7 +91,7 @@ chkconfig mysqld on
 vim /etc/profile
 
 在末尾添加
-PATH=$PATH:/usr/local/webserver/php/bin:$PATH
+PATH=$PATH:/usr/local/webserver/php/bin
 export PATH
 
 save

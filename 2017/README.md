@@ -21,17 +21,17 @@
 
 ### 2017-05
 
-- [python多环境](pyenv.md)
-- [python的问题归纳](python的问题归纳)
+- [python多环境](201705/pyenv.md)
+- [python的问题归纳](201705/python的问题归纳)
 
 ### 2017-06
 
-- [mysql编译安装](mysql_install.md)
+- [mysql编译安装](201706/mysql_install.md)
 
 
 ### 2017-07
 
-- [php编译安装](php_install.md)
-- [php扩展编译](php_redis_install.md)
-- [nginx安装](nginx_install.md)
-- [redis安装](redis_install.md)
+- [php编译安装](201707/php_install.md)
+- [php扩展编译](201707/php_redis_install.md)
+- [nginx安装](201707/nginx_install.md)
+- [redis安装](201707/redis_install.md)
