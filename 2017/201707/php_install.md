@@ -68,6 +68,10 @@ chkconfig php-fpm on
 
 	--with-openssl-dir=/path/to/include/openssl
 
+	ubuntu:
+
+    sudo apt-get install libssl-dev libsslcommon2-dev
+
 
 3. Please reinstall the libcurl distribution easy.h should be in /include/curl/
 
@@ -77,6 +81,8 @@ chkconfig php-fpm on
 4. png.h not found.
 
 	yum install libpng-devel
+
+	sudo apt-get install libpng-dev
 
 
 5. mcrypt.h not found. Please reinstall libmcrypt
