@@ -31,3 +31,8 @@ php-7 : [https://github.com/wcgallego/pecl-gearman](https://github.com/wcgallego
 	
 	php -m
 
+
+#### gearman 监控
+
+(echo status; sleep 0.1) | nc 127.0.0.1 4730
+
