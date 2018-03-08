@@ -4,9 +4,9 @@
 
      wget https://github.com/phpredis/phpredis/archive/2.2.4.tar.gz
 
-     cd phpredis-2.2.7                      # 进入 phpredis 目录
+     cd phpredis-2.2.7  #进入 phpredis 目录
 
-     /usr/local/php/bin/phpize              # php安装后的路径
+     /usr/local/php/bin/phpize # php安装后的路径
 
      ./configure --with-php-config=/usr/local/php/bin/php-config
     
@@ -23,3 +23,5 @@
 	extension=redis.so
 
     重启php-fpm
+	
+	sudo service php-fpm restart

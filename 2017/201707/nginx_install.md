@@ -23,6 +23,8 @@
 	  --with-zlib=/path/to/zlib/src \
 	  --with-openssl=/path/to/openssl/src
 
+	  make && make install
+
 5. 检测
 
 	查看80端口

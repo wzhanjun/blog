@@ -14,3 +14,4 @@
 - [PHP Xdebug调试](201803/php_debug.md)
 - [docker 入门](201803/docker.md)
 - [postgresql 安装](201803/postgresql_install.md)
+- [linux 环境设置说明](201803/linux_env.md)

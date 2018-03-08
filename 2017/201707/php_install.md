@@ -18,36 +18,38 @@
 	--with-mcrypt
 
 
-#### 开机自启动
+#### fpm配置
 
-    1. 复制开机脚本
-    cp source-dir/sapi/fpm/init.d.php-fpm  /etc/init.d/php-fpm
-    chmod 755
+    1. cp php-fpm.conf
 
-    2. cp php-fpm.conf
-
-    3. 检查开机启动
-     chkconfig php-fpm on
-
-    update-rc.d servicename  defaults
-
+    2. 修改配置
     groupadd www
-
     useradd -g www www
 
-    修改php-fpm.conf  中的uesr  group     (sock  listen.mode 0666)
+    修改www.conf  中的
+	uesr=www  
+	group=www
 
+	3. 修改php-fpm通信方式
+	listen =/var/run/php/php-fpm.sock;
+	listen.owner = www
+	listen.group = www
+	listen.mode 0666
+
+	4.设置时区
     设置时区  php.ini date.timezone ="UTC"
 
 
 ####php 安装后php-fpm自启动
 
-```
-cp /path/to/source/sapi/fpm/init.d.php-fpm /etc/init.d/php-fpm
-sudo chmod +x /etc/init.d/php-fpm
-chkconfig --add php-fpm
-chkconfig php-fpm on
-```
+	cp /path/to/source/sapi/fpm/init.d.php-fpm /etc/init.d/php-fpm
+	
+	sudo chmod +x /etc/init.d/php-fpm
+
+	chkconfig --add php-fpm
+
+	chkconfig php-fpm on
+
 ---
 
 
@@ -91,53 +93,7 @@ chkconfig php-fpm on
 
 
 ##### 备注
-	```
-	./configure --prefix=/usr/local/php \
-	--with-config-file-path=/etc/php \
-	--enable-fpm \
-	--enable-pcntl \
-	--enable-mysqlnd \
-	--enable-opcache \
-	--enable-sockets \
-	--enable-sysvmsg \
-	--enable-sysvsem \
-	--enable-sysvshm \
-	--enable-shmop \
-	--enable-zip \
-	--enable-soap \
-	--enable-xml \
-	--enable-mbstring \
-	--disable-rpath \
-	--disable-debug \
-	--disable-fileinfo \
-	--with-mysql=mysqlnd \
-	--with-mysqli=mysqlnd \
-	--with-pdo-mysql=mysqlnd \
-	--with-pcre-regex \
-	--with-iconv \
-	--with-zlib \
-	--with-mcrypt \
-	--with-gd \
-	--with-openssl \
-	--with-mhash \
-	--with-xmlrpc \
-	--with-curl \
-	--with-imap-ssl
 
-	sudo make
-	sudo make install
-	sudo mkdir /etc/php
-	sudo cp php.ini-development /etc/php/php.ini
-	注意，以上PHP编译选项根据实际情况可调整。
-	另外，还需要将PHP的可执行目录添加到环境变量中。 使用Vim/Sublime打开~/.bashrc，在末尾添加如下内容：
-	export PATH=/usr/local/php/bin:$PATH
-	export PATH=/usr/local/php/sbin:$PATH
-	保存后，终端输入命令：
-	source ~/.bashrc
-	```
-
-
-```
 	./configure --prefix=/usr/local/webserver/php71\
 	--enable-fpm\
 	--with-fpm-user=php-fpm\
@@ -167,6 +123,14 @@ chkconfig php-fpm on
 	--with-png-dir=/usr/lib\
 	--with-jpeg-dir=/usr/lib\
 	--with-freetype-dir=/usr/lib
-	
 
-```
+	sudo make
+	sudo make install
+	sudo mkdir /etc/php
+	sudo cp php.ini-development /etc/php/php.ini
+	注意，以上PHP编译选项根据实际情况可调整。
+	另外，还需要将PHP的可执行目录添加到环境变量中。 使用Vim/Sublime打开~/.bashrc，在末尾添加如下内容：
+	export PATH=/usr/local/php/bin:$PATH
+	export PATH=/usr/local/php/sbin:$PATH
+	保存后，终端输入命令：
+	source ~/.bashrc
