@@ -46,3 +46,7 @@
 
 
 修改配置文件后，再次测试问题解决。
+
+
+另附：
+[redis集群搭建教程](https://blog.csdn.net/men_wen/article/details/72853078)
