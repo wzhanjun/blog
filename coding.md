@@ -1,5 +1,8 @@
 #### PHP
 
+- [laynefyc/xhgui-branch  性能监控工具 (非侵入式)](https://github.com/laynefyc/xhgui-branch)
+- [weiboad/fiery  性能跟踪监控系统](https://github.com/weiboad/fiery)
+
 
 
 #### Go
