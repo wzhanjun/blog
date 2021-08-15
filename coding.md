@@ -23,6 +23,10 @@
 
 #### Elasticsearch
 
+- [elasticsearch基础入门](https://juejin.cn/post/6844904117580595214#heading-15)
+- [elasticsearch 支持SQL语法](https://juejin.cn/post/6901827227013349383)
+- [铭毅天下](https://elastic.blog.csdn.net/)
+
 
 
 #### Lua 
