@@ -1182,5 +1182,7 @@ POST /_bulk
 
 ##### 参考
 - https://github.com/judasn/Elasticsearch-Tutorial-zh-CN/blob/master/elasticsearch-base
-
 - https://stackoverflow.com/questions/19758335/error-when-trying-to-update-the-settings
+- https://www.cnblogs.com/yjf512/p/4897294.html
+- https://www.cyhone.com/articles/introduction-of-elasticsearch/
+
